@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background: red;
+        font-size: 24px;
+      }
+
+      /*
+      @media (max-width: 960px) {
+        header {
+          background: blue;
+          font-size: 28px;
+        }
+      }
+
+      @media (min-height: 400px) {
+        header {
+          background: black;
+          font-size: 28px;
+        }
+      }
+
+      @media (max-height: 800px) {
+        header {
+          background: black;
+          font-size: 28px;
+        }
+      }
+
+      @media (orientation: portrait) {
+        header {
+          background: yellow;
+          font-size: 28px;
+        }
+      }
+
+      
+      @media (orientation: landscape) {
+        header {
+          background: pink;
+          font-size: 28px;
+        }
+      }
+*/
+
+/*Operadores*/
+/*
+      @media (min-width: 320px) and (max-width: 580px) and (orientation: landscape) {
+        header {
+          background: pink;
+          font-size: 28px;
+        }
+      }
+      */
+
+      @media (min-width: 320px) and (max-width: 580px) , (orientation: landscape) {
+        header {
+          background: pink;
+          font-size: 28px;
+        }
+      }
+
+      @media not all and (max-width: 600px){
+        header {
+          background: blue;
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        Web Responsive
+      </header>
+    </div>
+  </body>
+</html>
